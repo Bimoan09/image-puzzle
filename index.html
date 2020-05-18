@@ -29,9 +29,7 @@
                     <div>Re-arrange to create a picture like this.</div>
                     <p id="levelPanel">
                         <input type="radio" name="level" id="easy" checked="checked" value="3" onchange="imagePuzzle.startGame(images, this.value);"
-                        /> <label for="easy">Easy</label>
-                        <input type="radio" name="level" id="medium" value="4" onchange="imagePuzzle.startGame(images, this.value);" />                        <label for="medium">Medium</label>
-                        <input type="radio" name="level" id="hard" value="5" onchange="imagePuzzle.startGame(images, this.value);" />                        <label for="hard">Hard</label>
+                        /> <label for="easy">Start</label>
                     </p>
                     <div>
                       <button id="newPhoto" type="button" class="btn" onclick="restart();">Another Photo</button>
@@ -52,11 +50,9 @@
 
         <script>
             var images = [
-                { src: 'images/london-bridge.jpg', title: 'London Bridge' },
-                { src: 'images/lotus-temple.JPG', title: 'Lotus Temple' },
-                { src: 'images/qutub-minar.jpg', title: 'Qutub Minar' },
-                { src: 'images/statue-of-liberty.jpg', title: 'Statue Of Liberty' },
-                { src: 'images/taj-mahal.jpg', title: 'Taj Mahal' }
+                { src: 'images/monas.jpg', title: 'Monas' },
+                { src: 'images/flower.jpg', title: 'Flower' },
+                { src: 'images/tajmahal.jpg', title: 'Taj Mahal' }
             ];
 
             window.onload = function () {

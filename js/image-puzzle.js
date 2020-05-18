@@ -36,7 +36,7 @@ var imagePuzzle = {
             li.style.width = 400 / gridSize + 'px';
             li.style.height = 400 / gridSize + 'px';
 
-            li.setAttribute('touch', 'true');
+            li.setAttribute('draggable', 'true');
             li.ondragstart = (event) => event.dataTransfer.setData('data', event.target.id);
             li.ondragover = (event) => event.preventDefault();
             li.ondrop = (event) => {
